@@ -2,16 +2,26 @@
 <html>
 <head>
 <title>PROJECTS</title>
-
 <style>
+body {margin:0;}
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
-.topnav a {
-  float: left;
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: right;
+  display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -20,27 +30,42 @@
   font-family: Helvetica;
 }
 
-.topnav a:hover {
-  background-color: #D0E5D7;
+.navbar a:hover {
+  background: #D0E5D7;
+  color: black;
+}
+  
+.navbar a.active{
+  background: #D0E5D9;
   color: black;
 }
 
-.topnav a.active {
-  background-color: #D0E5D7;
-  color: black;
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px;
 }
-
 </style>
-
 </head>
 <body>
 
-  <div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-  </div>
+<div class="navbar">
+  <a.active href="contact.html">Contact</a>
+  <a href="projects.html">Projects</a>
+  <a href="about.html">About</a>
+  <a href="index.html">
+        <img src="kname_daisy-removebg-preview.png" style="padding:none;width:10%;height:10%;">
+      </a>
+</div>
+
+//create a table with lingsuitics projects
+  //create a table with computer science proejcts, links to mediums posts, etc.
+  <a href="https://medium.com/@kimdaisyyr/design-for-others-marta-sprint-2b7a712b3bc1">Creating an App for MARTA: Atlanta's Public Transit System</a>
+  <a href="https://medium.com/@kimdaisyyr/design-for-understanding-covid-data-sprint-bdcee47db2fe">Reimagining Data: COVID Statistics in 2020-21</a>
+  <a href="https://medium.com/@kimdaisyyr/design-for-tension-argyle-chatbot-d44939111381">Argyle:Find a New Home Chatbot</a>
+  <a href="https://medium.com/@kimdaisyyr/physical-prototyping-an-extension-of-marta-eb17506913c8">Phsyical Prototyping: An Improvement of MARTA</a>
+
+
 
 </body>
 </html>
