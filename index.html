@@ -2,68 +2,60 @@
 <html>
 <head>
 <title>DAISY KIM</title>
-
 <style>
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+body {margin:0;}
+
 .container {
   position: relative;
   text-align: center;
   color: white;
 }
 
-.topnav {
-  list-style: none;
-  position:absolute;
-  right:50%;
-  margin-right:155px;
-  margin-top:220px;
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-.topnav a {
+.navbar a {
   float: right;
+  display: block;
   color: #f2f2f2;
-  text-align: right;
+  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 17px;
   font-family: Helvetica;
 }
 
-.topnav a:hover {
-  background-color: #D0E5D7;
+.navbar a:hover {
+  background: #D0E5D7;
   color: black;
 }
 
-.topnav a.active {
-  background-color: #D0E5D7;
-  color: white;
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px;
 }
-
 </style>
-
 </head>
 <body>
 
-  <div class="topnav">
-    <div class="topnav-center">
-      <a href="contact.html">Contact</a>
-      <a href="projects.html">Projects</a>
-      <a href="about.html">About</a>
-    </div>
-  </div>
+<div class="navbar">
+  <a href="contact.html">Contact</a>
+  <a href="projects.html">Projects</a>
+  <a href="about.html">About</a>
+  <a href="index.html">
+        <img src="kname_daisy-removebg-preview.png" style="width:10%;height:10%;">
+      </a>
+</div>
 
-  <div class="topnav">
-    <a href="index.html">
-      <img src="kname_daisy-removebg-preview.png" style="width:10%;height:10%;">
-    </a>
-  </div>
-
-  <div class = "containter"> <img src="kname_daisy.png" style="width:100%" class="center">
+<div class="main">
+    <div class = "containter"> <img src="kname_daisy.png" style="width:100%" class="center">
+</div>
 
 </body>
 </html>
