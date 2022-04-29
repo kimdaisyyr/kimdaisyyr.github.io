@@ -7,9 +7,18 @@ body {margin:0;}
 
 .container {
   position: relative;
-  text-align: center;
-  color: white;
 }
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #D0E5D7;
+  color: #333;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 
 .navbar {
   overflow: hidden;
@@ -35,7 +44,7 @@ body {margin:0;}
   color: black;
 }
   
-.navbar a.active{
+.navbar a:active{
   background: #D0E5D9;
   color: black;
 }
@@ -50,7 +59,7 @@ body {margin:0;}
 <body>
 
 <div class="navbar">
-  <a.active href="contact.html">Contact</a>
+  <a href="contact.html">Contact</a>
   <a href="projects.html">Projects</a>
   <a href="about.html">About</a>
   <a href="index.html">
@@ -58,12 +67,33 @@ body {margin:0;}
       </a>
 </div>
 
-<div>
-  <h1 style="text-align:center">
-    <a href="https://www.linkedin.com/in/kimdaisyyr">Connect on LinkedIn</a> 
-    <a href="kimdaisyyr@gmail.com">Email</a>
-</h1>
+<br><br><br><br><br>
+
+<div class="container">
+  <img src="professional_daisy.jpg" style="width:100%;">
+  <div class="text-block">
+    <h4 style="text-align:center;font-family:Helvetica;">
+    <a href="https://www.linkedin.com/in/kimdaisyyr">Connect on LinkedIn</a>
+  </div>
 </div>
+
+<div class="container">
+  <img src="popcorn_daisy.jpg" style="width:100%;">
+  <div class="text-block">
+    <h4 style="text-align:center;font-family:Helvetica;">
+    <a href="https://vsco.co/kimdaisyyr/gallery">Eat With Daisy</a>
+  </div>
+</div>
+
+<div class="container">
+  <img src="phone_daisy.jpg" style="width:100%;">
+  <div class="text-block">
+    <h4 style="text-align:center;font-family:Helvetica;">
+    <a href="kimdaisyyr@gmail.com">Email</a>
+  </div>
+</div>
+
+
 
 </body>
 </html>
