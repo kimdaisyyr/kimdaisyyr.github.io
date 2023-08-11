@@ -109,8 +109,8 @@ input, textarea {
 }
 
 ::selection {
-  background: var(--mint);
-  color: var(--pearl);
+  background: var(--white);
+  color: var(--mint);
 }
 
 :focus { outline-color: var(--mint); }
@@ -129,8 +129,8 @@ body { background: var(--pearl); }
 
 .sidebar,
 article {
-  background: var(--mint);
-  border: 1px solid var(--mint);
+  background: var(--white);
+  border: 1px solid var(--white);
   border-radius: 20px;
   padding: 15px;
   box-shadow: var(--shadow-1);
