@@ -129,8 +129,8 @@ body { background: var(--pearl); }
 
 .sidebar,
 article {
-  background: var(--white);
-  border: 1px solid var(--white);
+  background: var(--mint);
+  border: 1px solid var(--mint);
   border-radius: 20px;
   padding: 15px;
   box-shadow: var(--shadow-1);
@@ -323,7 +323,7 @@ main {
   border-radius: 0 15px;
   font-size: 13px;
   color: var(--mint);
-  background: var(--mint);
+  background: var(--white);
   padding: 10px;
   box-shadow: var(--shadow-2);
   transition: var(--transition-1);
