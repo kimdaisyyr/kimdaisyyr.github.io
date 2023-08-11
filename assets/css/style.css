@@ -308,7 +308,7 @@ main {
 
 .info-content .title {
   color: var(--onyx);
-  background: var(--pearl);
+  background: var(--mint);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
   width: max-content;
@@ -438,16 +438,16 @@ main {
 }
 
 .navbar-link {
-  color: var(--light-gray);
+  color: var(--mint);
   font-size: var(--fs-8);
   padding: 20px 7px;
   transition: color var(--transition-1);
 }
 
 .navbar-link:hover,
-.navbar-link:focus { color: var(--light-gray-70); }
+.navbar-link:focus { color: var(--light-gray); }
 
-.navbar-link.active { color: var(--mint); }
+.navbar-link.active { color: var(--light-gray); }
 
 
 
@@ -497,7 +497,7 @@ main {
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--white);
+  background: var(--mint);
   border-radius: inherit;
   z-index: -1;
 }
