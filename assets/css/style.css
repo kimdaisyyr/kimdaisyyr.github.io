@@ -294,7 +294,7 @@ main {
 }
 
 .avatar-box {
-  background: var(--white);
+  background: var(--mint);
   border-radius: 20px;
 }
 
@@ -308,7 +308,7 @@ main {
 
 .info-content .title {
   color: var(--onyx);
-  background: var(--white);
+  background: var(--pearl);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
   width: max-content;
