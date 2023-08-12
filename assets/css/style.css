@@ -28,8 +28,8 @@
   --onyx: hsl(240, 1%, 17%);
   --mint: hsl(141, 32%, 84%);
   --sage: hsl(128, 13%, 64%);
-  --gray: hsl(0, 0%, 60%)
-  --light-gray: hsl(0, 0%, 84%);
+  --gray: hsl(0, 0%, 75%)
+  --light-gray: hsl(0, 0%, 85%);
   --light-gray-70: hsla(94, 0%, 71%, 0.7);
 
   /**
@@ -323,7 +323,7 @@ main {
   right: -15px;
   border-radius: 0 15px;
   font-size: 13px;
-  color: var(--light-gray);
+  color: var(--gray);
   background: var(--mint);
   padding: 10px;
   box-shadow: var(--shadow-2);
@@ -379,7 +379,7 @@ main {
 }
 
 .contact-title {
-  color: var(--light-gray-70);
+  color: var(--gray);
   font-size: var(--fs-8);
   text-transform: uppercase;
   margin-bottom: 2px;
@@ -512,7 +512,7 @@ main {
 .service-item-title { margin-bottom: 7px; }
 
 .service-item-text {
-  color: var(--onyx);
+  color: var(--gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
   line-height: 1.6;
