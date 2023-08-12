@@ -323,7 +323,7 @@ main {
   right: -15px;
   border-radius: 0 15px;
   font-size: 13px;
-  color: var(--white);
+  color: var(--light-gray);
   background: var(--mint);
   padding: 10px;
   box-shadow: var(--shadow-2);
@@ -446,7 +446,7 @@ main {
 }
 
 .navbar-link:hover,
-.navbar-link:focus { color: var(--light-gray-70); }
+.navbar-link:focus { color: var(--light-gray); }
 
 .navbar-link.active { color: var(--onyx); }
 
