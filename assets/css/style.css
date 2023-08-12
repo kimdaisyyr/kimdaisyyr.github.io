@@ -323,8 +323,8 @@ main {
   right: -15px;
   border-radius: 0 15px;
   font-size: 13px;
-  color: var(--mint);
-  background: var(--white);
+  color: var(--white);
+  background: var(--mint);
   padding: 10px;
   box-shadow: var(--shadow-2);
   transition: var(--transition-1);
@@ -336,16 +336,16 @@ main {
   position: absolute;
   inset: 1px;
   border-radius: inherit;
-  background: var(--white);
+  background: var(--mint);
   transition: var(--transition-1);
   z-index: -1;
 }
 
 .info_more-btn:hover,
-.info_more-btn:focus { background: var(--white); }
+.info_more-btn:focus { background: var(--mint); }
 
 .info_more-btn:hover::before,
-.info_more-btn:focus::before { background: var(--white); }
+.info_more-btn:focus::before { background: var(--mint); }
 
 .info_more-btn span { display: none; }
 
