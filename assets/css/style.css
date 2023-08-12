@@ -28,6 +28,7 @@
   --onyx: hsl(240, 1%, 17%);
   --mint: hsl(141, 32%, 84%);
   --sage: hsl(128, 13%, 64%);
+  --gray: hsl(0, 0%, 60%)
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(94, 0%, 71%, 0.7);
 
@@ -421,7 +422,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: hsla(141, 32%, 84%, 0.75);
   backdrop-filter: blur(10px);
   border: 1px solid var(--white);
   border-radius: 12px 12px 0 0;
@@ -460,7 +461,7 @@ main {
 .about .article-title { margin-bottom: 15px; }
 
 .about-text {
-  color: var(--light-gray);
+  color: var(--gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
