@@ -29,8 +29,8 @@ const modalText = document.querySelector("[data-modal-text]");
 
 // modal toggle function
 const testimonialsModalFunc = function () {
-  modalContainer.classList.toggle("active");
-  overlay.classList.toggle("active");
+  modalContainer.classList.toggle("  active");
+  overlay.classList.toggle("  active");
 }
 
 // add click event to all modal items
@@ -83,11 +83,11 @@ const filterFunc = function (selectedValue) {
   for (let i = 0; i < filterItems.length; i++) {
 
     if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
+      filterItems[i].classList.add("  active");
     } else if (selectedValue === filterItems[i].dataset.category) {
-      filterItems[i].classList.add("active");
+      filterItems[i].classList.add("  active");
     } else {
-      filterItems[i].classList.remove("active");
+      filterItems[i].classList.remove("  active");
     }
 
   }
@@ -105,8 +105,8 @@ for (let i = 0; i < filterBtn.length; i++) {
     selectValue.innerText = this.innerText;
     filterFunc(selectedValue);
 
-    lastClickedBtn.classList.remove("active");
-    this.classList.add("active");
+    lastClickedBtn.classList.remove("  active");
+    this.classList.add("  active");
     lastClickedBtn = this;
 
   });
