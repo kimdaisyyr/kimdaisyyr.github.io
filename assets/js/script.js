@@ -16,42 +16,42 @@ sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); }
 
 
 
-// hobbies variables
-const hobbiesItem = document.querySelectorAll("[data-hobbies-item]");
-const hobbiesContainer = document.querySelector("[data-hobbies-container]");
-const hobbiesCloseBtn = document.querySelector("[data-hobbies-close-btn]");
+// testimonials variables
+const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
+const modalContainer = document.querySelector("[data-modal-container]");
+const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
 const overlay = document.querySelector("[data-overlay]");
 
-// hobbies variable
-const hobbiesImg = document.querySelector("[data-hobbies-img]");
-const hobbiesTitle = document.querySelector("[data-hobbies-title]");
-const hobbiesText = document.querySelector("[data-hobbies-text]");
+// modal variable
+const modalImg = document.querySelector("[data-modal-img]");
+const modalTitle = document.querySelector("[data-modal-title]");
+const modalText = document.querySelector("[data-modal-text]");
 
-// hobbies toggle function
-const hobbieshobbiesFunc = function () {
-  hobbiesContainer.classList.toggle("active");
+// modal toggle function
+const testimonialsModalFunc = function () {
+  modalContainer.classList.toggle("active");
   overlay.classList.toggle("active");
 }
 
-// add click event to all hobbies items
-for (let i = 0; i < hobbiesItem.length; i++) {
+// add click event to all modal items
+for (let i = 0; i < testimonialsItem.length; i++) {
 
-  hobbiesItem[i].addEventListener("click", function () {
+  testimonialsItem[i].addEventListener("click", function () {
 
-    hobbiesImg.src = this.querySelector("[data-hobbies-avatar]").src;
-    hobbiesImg.alt = this.querySelector("[data-hobbies-avatar]").alt;
-    hobbiesTitle.innerHTML = this.querySelector("[data-hobbies-title]").innerHTML;
-    hobbiesText.innerHTML = this.querySelector("[data-hobbies-text]").innerHTML;
+    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
+    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
+    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
+    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
 
-    hobbieshobbiesFunc();
+    testimonialsModalFunc();
 
   });
 
 }
 
-// add click event to hobbies close button
-hobbiesCloseBtn.addEventListener("click", hobbieshobbiesFunc);
-overlay.addEventListener("click", hobbieshobbiesFunc);
+// add click event to modal close button
+modalCloseBtn.addEventListener("click", testimonialsModalFunc);
+overlay.addEventListener("click", testimonialsModalFunc);
 
 
 
