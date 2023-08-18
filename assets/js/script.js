@@ -140,7 +140,7 @@ for (let i = 0; i < formInputs.length; i++) {
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-pages.addEventListener("click", function () { pages.classList.add("  active"); });
+pages.addEventListener("click", function () { pages.classList.add("  active"); navigationLinks.classList.add("  active"); });
 
 // // add event to all nav link
 // for (let i = 0; i < navigationLinks.length; i++) {
