@@ -141,8 +141,8 @@ const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
 navigationLinks.addEventListener("click", function (){
-pages.addEventListener("click", function () { pages.classList.remove("  active"); navigationLinks.classList.remove("  active"); });
-pages.addEventListener("click", function () { pages.classList.add("  active"); navigationLinks.classList.add("  active"); });
+  pages.addEventListener("click", function () { pages.classList.remove("  active"); navigationLinks.classList.remove("  active"); });
+  pages.addEventListener("click", function () { pages.classList.add("  active"); navigationLinks.classList.add("  active"); });
 }
 
 // // add event to all nav link
