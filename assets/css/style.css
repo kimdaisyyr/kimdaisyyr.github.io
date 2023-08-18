@@ -880,7 +880,7 @@ main {
    * #PORTFOLIO, hobbies
    */
 
-  .project-img, .hobbies-banner-box { border-radius: 16px; }
+  .hobbies-banner-box { border-radius: 16px; }
 
   .hobbies-posts-list { gap: 30px; }
 
