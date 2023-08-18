@@ -134,11 +134,11 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
-document.querySelectorAll(".nav-item").forEach((ele) =>
+document.querySelectorAll(".navbar-item").forEach((ele) =>
   ele.addEventListener("click", function (event) {
     event.preventDefault();
     document
-      .querySelectorAll(".nav-item")
+      .querySelectorAll(".navbar-item")
       .forEach((ele) => ele.classList.remove("active"));
     this.classList.add("active")
   })
