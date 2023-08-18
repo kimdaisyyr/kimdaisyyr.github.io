@@ -666,7 +666,7 @@ main {
 .hobbies-post-item > a:hover .hobbies-item-title { color: var(--mint); }
 
 .hobbies-text {
-  color: var(--gray);
+  color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
