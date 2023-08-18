@@ -10,11 +10,6 @@
 
 
 
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
 
   /**
@@ -965,21 +960,6 @@ main {
    * ABOUT
    */
 
-  /* testimonials modal */
-
-  .testimonials-modal {
-    gap: 35px;
-    max-width: 680px;
-  }
-
-  .modal-avatar-box img { width: 80px; }
-
-
-
-  /**
-   * PORTFOLIO
-   */
-
   .article-title { padding-bottom: 20px; }
 
   .filter-select-box { display: none; }
@@ -1005,7 +985,7 @@ main {
 
   /* portfolio and hobbies grid */
 
-  .project-list, .hobbies-posts-list { grid-template-columns: 1fr 1fr; }
+  .hobbies-posts-list { grid-template-columns: 1fr 1fr; }
 
 
 
@@ -1110,14 +1090,6 @@ main {
     grid-template-columns: 1fr 1fr;
     gap: 20px 25px;
   }
-
-  /* testimonials */
-
-  .testimonials-item { min-width: calc(50% - 15px); }
-
-  /* clients */
-
-  .clients-item { min-width: calc(25% - 38px); }
 
 
 
