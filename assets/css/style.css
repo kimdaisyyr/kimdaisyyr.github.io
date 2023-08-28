@@ -584,6 +584,84 @@ main {
   line-height: 1.6;
 }
 
+.timeline-posts-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.timeline-post-item > a {
+  position: relative;
+  background: var(--white);
+  height: 100%;
+  box-shadow: var(--shadow-4);
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.timeline-post-item > a::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  background: var(--white);
+  z-index: -1;
+}
+
+.timeline-banner-box {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.timeline-banner-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-1);
+}
+
+.timeline-post-item > a:hover .timeline-banner-box img { transform: scale(1.1); }
+
+.timeline-content { padding: 15px; }
+
+.timeline-meta {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 10px;
+}
+
+.timeline-meta :is(.timeline-category, time) {
+  color: var(--light-gray-70);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+}
+
+.timeline-meta .dot {
+  background: var(--light-gray-70);
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+}
+
+.timeline-item-title {
+  margin-bottom: 10px;
+  line-height: 1.3;
+  transition: var(--transition-1);
+}
+
+.timeline-post-item > a:hover .timeline-item-title { color: var(--mint); }
+
+.timeline-text {
+  color: var(--light-gray-70);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
 
 
 
@@ -593,7 +671,7 @@ main {
   #HOBBIES
 \*-----------------------------------*/
 
-.hobbies-posts { margin-bottom: 10px; }
+.posts { margin-bottom: 10px; }
 
 .hobbies-posts-list {
   display: grid;
@@ -696,8 +774,8 @@ main {
   /**
    * #PORTFOLIO, hobbies
    */
-
   .project-img,
+  .timeline-banner-box { height: auto; }
   .hobbies-banner-box { height: auto; }
 
 }
@@ -875,6 +953,11 @@ main {
 
   .skills-item:not(:last-child) { margin-bottom: 25px; }
 
+  .timeline-banner-box { border-radius: 16px; }
+
+  .timeline-posts-list { gap: 30px; }
+
+  .timeline-content { padding: 25px; }
 
 
   /**
@@ -983,7 +1066,7 @@ main {
   .filter-item button.active { color: var(--mint); }
 
   /* portfolio and hobbies grid */
-
+  .timeline-posts-list { grid-template-columns: 1fr 1fr; }
   .hobbies-posts-list { grid-template-columns: 1fr 1fr; }
 
 
@@ -1104,6 +1187,7 @@ main {
    * hobbies
    */
 
+  .timeline-banner-box { height: 230px; }
   .hobbies-banner-box { height: 230px; }
 
 }
